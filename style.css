@@ -3,8 +3,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-.menu{
-    background-color: black;
-    display:flex;
+.container-column{
+    display:inline-block;
+    padding:20px;
+    color:white;
+    background-color:black;
+    margin-right: 75%;
+    padding-bottom:100%;
+ line-height: 40px;
+
+}
+
+.logo{
+    width: 60%;
+    margin-bottom: 20px;
+   
+}
+ul{
+    list-style-type: none;
+  
+   
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+.nav-container{
+    background-color:#080F21 ;
+    padding:40px;
+}
+.button{
+    background-color: #080F21;
+    color:white;
+    border-radius: 20%;
+    border-top-left-radius: 30%;
+    padding:20px;
 
 }
