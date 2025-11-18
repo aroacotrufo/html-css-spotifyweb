@@ -2,15 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+}
+main{
+    height: calc(100vh - 100px);
+    display: flex;
 }
 .container-column{
-    display:inline-block;
-    padding:20px;
+    
     color:white;
     background-color:black;
-    margin-right: 75%;
-    padding-bottom:100%;
- line-height: 40px;
+    width:200px;
 
 }
 
@@ -30,7 +32,8 @@ a{
 }
 .nav-container{
     background-color:#080F21 ;
-    padding:40px;
+    flex-grow:1;
+  
 }
 .button{
     background-color: #080F21;
@@ -39,4 +42,8 @@ a{
     border-top-left-radius: 30%;
     padding:20px;
 
+}
+footer{
+    height: 100px;
+    background: #191A18;
 }
