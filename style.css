@@ -23,7 +23,9 @@ MAIN-COLONNA
     background-color: black;
     width:200px;
     font-size:0.75rem;
-  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
@@ -50,6 +52,27 @@ a {
 a img{
     width:12px;
 }
+.img-icons{
+    width:20px;
+   
+}
+.sidebar-bottom p{
+    display:flex;
+    align-items:center;
+    margin:5px;
+    padding:10px;
+
+}
+.install{
+    border-bottom:1px solid;
+
+}
+.profile{
+    font-size:14px;
+    font-weight: bolder;
+    color: white;
+}
+
 
 /**************************************************
 HEADER-MAIN
@@ -115,13 +138,13 @@ h3{
     margin:30px 10px;
    
 }
-   .cards-bottom{
+.cards-bottom{
     display:flex;
     justify-content:flex-start;
     margin-left:10px;
 }
 .card-items{
-    margin-right:10px;
+    margin:20px 10px;
 }
 p{
     color:grey;
@@ -146,6 +169,7 @@ footer {
     display:flex;
     align-items: center;
 }
+
 .img-footer{
    margin:10px;
    
