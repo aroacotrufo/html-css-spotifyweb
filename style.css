@@ -47,13 +47,14 @@ ul {
 a {
     text-decoration: none;
     color: white;
-    margin:20px;
+    margin:10px;
 }
 a img{
     width:12px;
 }
 .img-icons{
     width:20px;
+    margin-right: 5px;
    
 }
 .sidebar-bottom p{
@@ -61,6 +62,7 @@ a img{
     align-items:center;
     margin:5px;
     padding:10px;
+    
 
 }
 .install{
@@ -71,6 +73,11 @@ a img{
     font-size:14px;
     font-weight: bolder;
     color: white;
+   
+}
+.profile .img-icons{
+    background-color: gray;
+    border-radius:50%;
 }
 
 
@@ -90,8 +97,8 @@ HEADER-MAIN
 .button {
     background-color: #080F21;
     color: white;
-    border-radius: 20%;
-    padding: 20px;
+    border-radius: 30%;
+    padding: 15px;
     border-color: white;
     margin: 20px;
 }
@@ -102,7 +109,7 @@ MAIN-CENTRALE
 .container-main {
     background-color: #080F21;
     flex-grow: 1;
-    overflow: auto;
+    overflow:auto;
 }
 .container-playlist {
     background-color: #080F21;
@@ -113,6 +120,7 @@ MAIN-CENTRALE
 .container-playlist ul{
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .container-playlist li {
@@ -127,11 +135,20 @@ MAIN-CENTRALE
 }
 .card-items img{
     width:150px;
+   
 }
-figcaption{
+.card-items p{
    text-align: center;
     color: white;
     font-size: 12px;
+}
+.card-items .text-grey{
+    color:grey;
+    font-size:10px;
+    text-align: center;
+}
+.card-items div{
+    position:relative;
 }
 h3{
     color:white;
@@ -145,6 +162,8 @@ h3{
 }
 .card-items{
     margin:20px 10px;
+    cursor:pointer;
+    
 }
 p{
     color:grey;
@@ -159,6 +178,28 @@ p{
     margin:30px 10px 10px;
 }
 
+/*********************************/
+/* CURSORE PLAY SU CARD */
+
+.play-icon{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    opacity:0;
+    pointer-events: none;
+    width:60px;
+}
+.card-items:hover img{
+    filter: brightness(70%);
+}
+.card-items:hover .play-icon{
+    opacity:1;
+}
+/*************************************************/
+
+
+
 /***********************************************
 FOOTER
 *************************************************/
@@ -168,13 +209,68 @@ footer {
     background: #191A18;
     display:flex;
     align-items: center;
+    justify-content: space-between;
+}
+.album{
+    display:flex;
+    align-items:center;
 }
 
-.img-footer{
+.img-footer {
    margin:10px;
-   
-
+   display:flex;
+   align-items:center;
 }
 figure img{
     width:50px;
+}
+.img-footer figcaption {
+    color:white;
+    padding:10px;
+    font-size: 10px;
+}
+
+.player i{
+    color:white;
+    margin:10px;
+}
+.player-icon {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 10px;
+
+}
+.player .progress-bar {
+  flex-grow: 1;
+  accent-color: white;
+  height: 5px;
+  border-radius: 2px;
+  margin: 0 5px;
+  width:400px;
+
+}
+.time{
+    color:white;
+    font-size: 0.45rem;
+}
+.volume{
+    
+      gap: 10px;
+      display:flex;
+      align-items:center;
+}
+.icon{
+    width:17px;
+}
+figcaption .text-grey{
+    color:grey;
+}
+.volume .progress-bar {
+  flex-grow: 1;
+  accent-color: white;
+  height: 5px;
+  border-radius: 2px;
+  margin: 0 5px;
+
 }
