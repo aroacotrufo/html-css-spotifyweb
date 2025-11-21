@@ -179,7 +179,7 @@ p{
 }
 
 /*********************************/
-/* CURSORE PLAY SU CARD */
+/* HOVER PLAY SU CARD */
 
 .play-icon{
     position:absolute;
@@ -273,4 +273,21 @@ figcaption .text-grey{
   border-radius: 2px;
   margin: 0 5px;
 
+}
+/*************************************
+HOVER TEXT-GREY E BOTTONE
+********************************/
+.text-grey{
+    color:grey
+}
+ a.text-grey:hover{
+    
+    color:white;
+}
+.install:hover{
+    color:white;
+}
+button:hover {
+  transform: scale(1.2);
+  transition: transform 0.2s;
 }
