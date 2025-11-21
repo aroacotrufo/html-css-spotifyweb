@@ -109,7 +109,7 @@ MAIN-CENTRALE
 .container-main {
     background-color: #080F21;
     flex-grow: 1;
-    overflow:auto;
+    overflow: scroll ;
 }
 .container-playlist {
     background-color: #080F21;
@@ -229,6 +229,9 @@ figure img{
     padding:10px;
     font-size: 10px;
 }
+strong{
+    margin-left:10px;
+    }
 
 .player i{
     color:white;
@@ -290,4 +293,7 @@ HOVER TEXT-GREY E BOTTONE
 button:hover {
   transform: scale(1.2);
   transition: transform 0.2s;
+}
+.album .icon:hover{
+    color:white;
 }
