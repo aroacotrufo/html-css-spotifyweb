@@ -67,6 +67,7 @@ a img{
 }
 .install{
     border-bottom:1px solid;
+    cursor:pointer;
 
 }
 .profile{
@@ -97,10 +98,11 @@ HEADER-MAIN
 .button {
     background-color: #080F21;
     color: white;
-    border-radius: 30%;
-    padding: 15px;
+    border-radius: 25px;
+    padding: 10px 40px;
     border-color: white;
     margin: 20px;
+    
 }
 /**********************************************
 MAIN-CENTRALE
@@ -109,7 +111,7 @@ MAIN-CENTRALE
 .container-main {
     background-color: #080F21;
     flex-grow: 1;
-    overflow: scroll ;
+    overflow-y: scroll ;
 }
 .container-playlist {
     background-color: #080F21;
@@ -242,6 +244,7 @@ strong{
   align-items: center;
   justify-content:center;
   gap: 10px;
+  cursor:pointer;
 
 }
 .player .progress-bar {
@@ -281,7 +284,8 @@ figcaption .text-grey{
 HOVER TEXT-GREY E BOTTONE
 ********************************/
 .text-grey{
-    color:grey
+    color:grey;
+    cursor:pointer;
 }
  a.text-grey:hover{
     
@@ -294,6 +298,6 @@ button:hover {
   transform: scale(1.2);
   transition: transform 0.2s;
 }
-.album .icon:hover{
+.album.icon:hover{
     color:white;
 }
