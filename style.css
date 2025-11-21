@@ -6,7 +6,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
-    font-size:16px;
+    font-size:12px;
 }
 
 
@@ -64,6 +64,10 @@ a img{
     padding:10px;
     
 
+}
+.icon-add{
+    background-color: grey;
+    width:20px;
 }
 .install{
     border-bottom:1px solid;
@@ -143,6 +147,7 @@ MAIN-CENTRALE
    text-align: center;
     color: white;
     font-size: 12px;
+  
 }
 .card-items .text-grey{
     color:grey;
@@ -165,19 +170,22 @@ h3{
 .card-items{
     margin:20px 10px;
     cursor:pointer;
-    
+    width:150px;
 }
 p{
     color:grey;
     font-size:10px;
     margin:10px;
-    margin-bottom:30px;
+    margin-bottom:10px;
 }
 
 
 .with-subtitle{
     color:white;
     margin:30px 10px 10px;
+}
+.icona-rotonda{
+    border-radius:50%;
 }
 
 /*********************************/
@@ -253,7 +261,7 @@ strong{
   height: 5px;
   border-radius: 2px;
   margin: 0 5px;
-  width:400px;
+  width:200px;
 
 }
 .time{
